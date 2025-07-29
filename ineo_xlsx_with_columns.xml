@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbooks>
+    <styles>
+        <style id="1">
+            <font>Arial</font>
+            <size>12</size>
+            <bold>true</bold>
+            <color>#000000</color>
+            <background>#E6E6FA</background>
+        </style>
+        <style id="2">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#333333</color>
+        </style>
+        <style id="3">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#000000</color>
+            <alignment>center</alignment>
+        </style>
+        <style id="4">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#006400</color>
+            <alignment>right</alignment>
+        </style>
+        <style id="5">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#8B4513</color>
+        </style>
+    </styles>
+    
+    <columns>
+        <column name="A" width="-1"/>
+        <column name="B" width="8"/>
+        <column name="C" width="-1"/>
+        <column name="D" width="18"/>
+        <column name="E" width="12"/>
+    </columns>
+    
+    <workbook name="Empleados">
+        <cell row="1" column="A" text="Nombre Completo" style="1"/>
+        <cell row="1" column="B" text="Edad" style="1"/>
+        <cell row="1" column="C" text="Ciudad" style="1"/>
+        <cell row="1" column="D" text="Departamento" style="1"/>
+        <cell row="1" column="E" text="Salario" style="1"/>
+        <cell row="2" column="A" text="Juan Pérez" style="2"/>
+        <cell row="2" column="B" text="30" style="3"/>
+        <cell row="2" column="C" text="Madrid" style="5"/>
+        <cell row="2" column="D" text="IT" style="2"/>
+        <cell row="2" column="E" text="45000" style="4"/>
+    </workbook>
+</workbooks>
