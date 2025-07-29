@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbooks>
+    <styles>
+        <style id="1">
+            <font>Arial</font>
+            <size>12</size>
+            <bold>true</bold>
+            <color>#000000</color>
+        </style>
+        <style id="2">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#333333</color>
+            <background>#F0F0F0</background>
+        </style>
+        <style id="3">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#000000</color>
+            <alignment>center</alignment>
+        </style>
+    </styles>
+    
+    <workbook name="Hoja1">
+        <cell row="1" column="A" text="Nombre" style="1"/>
+        <cell row="1" column="B" text="Edad" style="1"/>
+        <cell row="1" column="C" text="Ciudad" style="1"/>
+        <cell row="2" column="A" text="Juan" style="2"/>
+        <cell row="2" column="B" text="25" style="3"/>
+        <cell row="2" column="C" text="Madrid" style="2"/>
+    </workbook>
+    
+    <workbook name="Hoja2">
+        <cell row="1" column="A" text="Producto" style="1"/>
+        <cell row="1" column="B" text="Precio" style="1"/>
+        <cell row="2" column="A" text="Laptop" style="2"/>
+        <cell row="2" column="B" text="850" style="3"/>
+    </workbook>
+</workbooks>
