@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ineoDoc task="updateXlsx" task_id="ejemplo_small_001">
+    <data>
+        <dataOut>FILE://./tmp/prueba_salida.xlsx</dataOut>
+    </data>
+    <responseOut>FILE://./ineoDocxCmdLine.response</responseOut>
+    <log>
+        <logLevel>DEBUG</logLevel>
+        <logFile>FILE://./ineoDocxCmdLine.log</logFile>
+        <logFormat>%(asctime)s - %(name)s - %(levelname)s - %(message)s</logFormat>
+        <logDateFormat>%Y-%m-%d %H:%M:%S</logDateFormat>
+        <logConsole>true</logConsole>   
+    </log>
+<workbooks>
+    <styles>
+        <style id="1">
+            <font>Arial</font>
+            <size>12</size>
+            <bold>true</bold>
+            <color>#000000</color>
+            <background>#E6E6FA</background>
+        </style>
+        <style id="2">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#333333</color>
+        </style>
+        <style id="3">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#000000</color>
+            <alignment>center</alignment>
+        </style>
+        <style id="4">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#006400</color>
+            <alignment>right</alignment>
+        </style>
+        <style id="5">
+            <font>Arial</font>
+            <size>10</size>
+            <bold>false</bold>
+            <color>#8B4513</color>
+        </style>
+    </styles>
+    <workbook name="Empleados">
+        <cell row="1" column="A" value="Nombre Completo" style="1" />
+        <cell row="1" column="B" value="Edad" style="1" />
+        <cell row="1" column="C" value="Ciudad" style="1" />
+        <cell row="1" column="D" value="Departamento" style="1" />
+        <cell row="1" column="E" value="Salario" style="1" />
+        <cell row="1" column="F" value="Fecha Ingreso" style="1" />
+        <cell row="1" column="G" value="Rendimiento" style="1" />
+        <cell row="2" column="A" value="Cristina López" style="2" />
+        <cell row="2" column="B" value="22" style="3" />
+        <cell row="2" column="C" value="Alicante" style="5" />
+        <cell row="2" column="D" value="Desarrollo" style="2" />
+        <cell row="2" column="E" value="65797" format="€#,##0.00" style="4" />
+        <cell row="2" column="F" value="2023-01-15" format="dd/mm/yyyy" style="2" />
+        <cell row="2" column="G" value="0.94" format="0.00%" style="3" />
+        <cell row="3" column="A" value="Pedro García" style="2" />
+        <cell row="3" column="B" value="48" style="3" />
+        <cell row="3" column="C" value="Alicante" style="5" />
+        <cell row="3" column="D" value="IT" style="2" />
+        <cell row="3" column="E" value="32030" format="€#,##0.00" style="4" />
+        <cell row="3" column="F" value="2022-03-22" format="dd/mm/yyyy" style="2" />
+        <cell row="3" column="G" value="0.78" format="0.00%" style="3" />
+        <cell row="4" column="A" value="María Fernández" style="2" />
+        <cell row="4" column="B" value="63" format="0" style="3" />
+        <cell row="4" column="C" value="Vigo" style="5" />
+        <cell row="4" column="D" value="Atención al Cliente" style="2" />
+        <cell row="4" column="E" value="60512.75" format="€#,##0.00" style="4" />
+        <cell row="4" column="F" value="2021-07-10" format="dd/mm/yyyy" style="2" />
+        <cell row="4" column="G" value="0.85" format="0.00%" style="3" />
+        <cell row="5" column="A" value="Laura Díaz" style="2" />
+        <cell row="5" column="B" value="35" style="3" />
+        <cell row="5" column="C" value="Vigo" style="5" />
+        <cell row="5" column="D" value="Ventas" style="2" />
+        <cell row="5" column="E" value="63819" format="€#,##0.00" style="4" />
+        <cell row="5" column="F" value="2020-11-05" format="dd/mm/yyyy" style="2" />
+        <cell row="5" column="G" value="0.92" format="0.00%" style="3" />
+        <cell row="6" column="A" value="Antonio Jiménez" style="2" />
+        <cell row="6" column="B" value="27" style="3" />
+        <cell row="6" column="C" value="Málaga" style="5" />
+        <cell row="6" column="D" value="Marketing" style="2" />
+        <cell row="6" column="E" value="44860.25" format="€#,##0.00" style="4" />
+        <cell row="6" column="F" value="2024-02-14" format="dd/mm/yyyy" style="2" />
+        <cell row="6" column="G" value="0.78" format="0.00%" style="3" />
+        <cell row="7" column="A" value="Ana Álvarez" style="2" />
+        <cell row="7" column="B" value="29" style="3" />
+        <cell row="7" column="C" value="Málaga" style="5" />
+        <cell row="7" column="D" value="Logística" style="2" />
+        <cell row="7" column="E" value="71689.50" format="€#,##0.00" style="4" />
+        <cell row="7" column="F" value="2019-06-18" format="dd/mm/yyyy" style="2" />
+        <cell row="7" column="G" value="0.89" format="0.00%" style="3" />
+        <cell row="8" column="A" value="Carlos Díaz" style="2" />
+        <cell row="8" column="B" value="54" style="3" />
+        <cell row="8" column="C" value="Córdoba" style="5" />
+        <cell row="8" column="D" value="Desarrollo" style="2" />
+        <cell row="8" column="E" value="46334.25" format="€#,##0.00" style="4" />
+        <cell row="8" column="F" value="2022-09-12" format="dd/mm/yyyy" style="2" />
+        <cell row="8" column="G" value="0.95" format="0.00%" style="3" />
+        <cell row="9" column="A" value="María Romero" style="2" />
+        <cell row="9" column="B" value="28" style="3" />
+        <cell row="9" column="C" value="Zaragoza" style="5" />
+        <cell row="9" column="D" value="Logística" style="2" />
+        <cell row="9" column="E" value="25625.75" format="€#,##0.00" style="4" />
+        <cell row="9" column="F" value="2023-12-01" format="dd/mm/yyyy" style="2" />
+        <cell row="9" column="G" value="0.67" format="0.00%" style="3" />
+        <cell row="10" column="A" value="Carlos Romero" style="2" />
+        <cell row="10" column="B" value="62" style="3" />
+        <cell row="10" column="C" value="Alicante" style="5" />
+        <cell row="10" column="D" value="Finanzas" style="2" />
+        <cell row="10" column="E" value="63477.00" format="€#,##0.00" style="4" />
+        <cell row="10" column="F" value="2018-04-25" format="dd/mm/yyyy" style="2" />
+        <cell row="10" column="G" value="0.83" format="0.00%" style="3" />
+        <cell row="11" column="A" value="Elena Díaz" style="2" />
+        <cell row="11" column="B" value="61" style="3" />
+        <cell row="11" column="C" value="Valencia" style="5" />
+        <cell row="11" column="D" value="Calidad" style="2" />
+        <cell row="11" column="E" value="55268.90" format="€#,##0.00" style="4" />
+        <cell row="11" column="F" value="2020-08-30" format="dd/mm/yyyy" style="2" />
+        <cell row="11" column="G" value="0.91" format="0.00%" style="3" />
+    </workbook>
+</workbooks>
+</ineoDoc>

@@ -1,0 +1,172 @@
+2025-08-06 10:46:17 - __main___2201843985888 - INFO - Iniciando conversión XML a Excel
+2025-08-06 10:46:17 - __main___2201843985888 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 10:46:17 - __main___2201843985888 - ERROR - El archivo tmp/prueba_salida.xlsx no existe
+2025-08-06 10:51:41 - __main___2016488386416 - INFO - Iniciando conversión XML a Excel
+2025-08-06 10:51:41 - __main___2016488386416 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 10:51:41 - __main___2016488386416 - INFO - Archivo de salida configurado: tmp/prueba_salida.xlsx
+2025-08-06 10:51:41 - __main___2016488386416 - INFO - Archivo Excel de salida: tmp/prueba_salida.xlsx
+2025-08-06 10:51:41 - __main___2016488386416 - INFO - Archivo Excel creado exitosamente: tmp/prueba_salida.xlsx
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - Iniciando conversión XML a Excel
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - Archivo de salida configurado: tmp/prueba_salida.xlsx
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - Archivo Excel de salida: tmp/prueba_salida.xlsx
+2025-08-06 10:54:17 - __main___1825999761584 - INFO - Archivo Excel creado exitosamente: tmp/prueba_salida.xlsx
+2025-08-06 10:58:26 - __main___1839042016208 - INFO - Iniciando conversión XML a Excel
+2025-08-06 10:58:26 - __main___1839042016208 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 10:58:26 - __main___1839042016208 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 10:58:26 - __main___1839042016208 - INFO - Archivo de salida configurado: tmp/prueba_salida.xlsx
+2025-08-06 10:58:26 - __main___1839042016208 - INFO - Archivo Excel de salida: tmp/prueba_salida.xlsx
+2025-08-06 10:58:27 - __main___1839042016208 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 55 celdas
+2025-08-06 10:58:27 - __main___1839042016208 - INFO - Archivo Excel creado exitosamente: tmp/prueba_salida.xlsx
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Archivo de salida configurado: tmp/prueba_salida.xlsx
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Archivo Excel de salida: tmp/prueba_salida.xlsx
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 55 celdas
+2025-08-06 11:01:38 - __main___2512358355040 - INFO - Archivo Excel creado exitosamente: tmp/prueba_salida.xlsx
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Archivo de salida configurado: tmp/prueba_salida.xlsx
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Archivo Excel de salida: tmp/prueba_salida.xlsx
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 55 celdas
+2025-08-06 11:04:43 - __main___1727859164640 - INFO - Archivo Excel creado exitosamente: tmp/prueba_salida.xlsx
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 55 celdas
+2025-08-06 11:05:20 - __main___1968309241312 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Workbook 'Empleados': Hoja creada, procesando 55 celdas
+2025-08-06 11:05:48 - __main___1978681034208 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 64 celdas
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '€#,##0.00' a celda E2
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F2
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '€#,##0.00' a celda E3
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F3
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '€#,##0.00' a celda E4
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F4
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '€#,##0.00' a celda E5
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F5
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '0.00%' a celda G5
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '€#,##0.00' a celda E6
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F6
+2025-08-06 11:08:52 - __main___2696049472464 - DEBUG - Aplicando formato '0.00%' a celda G6
+2025-08-06 11:08:52 - __main___2696049472464 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Archivo de salida configurado: tmp/test_formatos_nuevo.xlsx
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Archivo Excel de salida: tmp/test_formatos_nuevo.xlsx
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Workbook 'Empleados': Hoja creada, procesando 64 celdas
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '€#,##0.00' a celda E2
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F2
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '€#,##0.00' a celda E3
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F3
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '€#,##0.00' a celda E4
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F4
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '€#,##0.00' a celda E5
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F5
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '0.00%' a celda G5
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '€#,##0.00' a celda E6
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F6
+2025-08-06 11:10:40 - __main___1777976685440 - DEBUG - Aplicando formato '0.00%' a celda G6
+2025-08-06 11:10:40 - __main___1777976685440 - INFO - Archivo Excel creado exitosamente: tmp/test_formatos_nuevo.xlsx
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 77 celdas
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E2
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F2
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G2
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E3
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F3
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G3
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E4
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F4
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G4
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E5
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F5
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G5
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E6
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F6
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G6
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E7
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F7
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G7
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E8
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F8
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G8
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E9
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F9
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G9
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E10
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F10
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G10
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '€#,##0.00' a celda E11
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F11
+2025-08-06 11:12:46 - __main___1700339463120 - DEBUG - Aplicando formato '0.00%' a celda G11
+2025-08-06 11:12:46 - __main___1700339463120 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 77 celdas
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E2
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F2
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G2
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E3
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F3
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G3
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E4
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F4
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G4
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E5
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F5
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G5
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E6
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F6
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G6
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E7
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F7
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G7
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E8
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F8
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G8
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E9
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F9
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G9
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E10
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F10
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G10
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '€#,##0.00' a celda E11
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F11
+2025-08-06 11:14:54 - __main___2770934285792 - DEBUG - Aplicando formato '0.00%' a celda G11
+2025-08-06 11:14:54 - __main___2770934285792 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Iniciando conversión XML a Excel
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoDocxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Archivo de salida configurado: ./tmp/prueba_salida.xlsx
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Workbook 'Empleados': Utilizando hoja existente, procesando 77 celdas
+2025-08-06 11:16:56 - __main___2188420613760 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(mkdir:*)",
+      "Bash(del test_invalid.xml)",
+      "Bash(rm:*)"
+    ],
+    "deny": []
+  }
+}

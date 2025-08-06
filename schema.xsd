@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <!-- Elemento raiz puede ser workbooks (compatibilidad) o ineoDoc (nuevo) -->
+  <xs:element name="workbooks" type="workbooksType"/>
+  
+  <xs:element name="ineoDoc">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="data" type="dataType" minOccurs="0"/>
+        <xs:element name="responseOut" type="xs:string" minOccurs="0"/>
+        <xs:element name="log" type="logType" minOccurs="0"/>
+        <xs:element name="options" type="optionsType" minOccurs="0"/>
+        <xs:element name="workbooks" type="workbooksType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="task" type="xs:string" use="required"/>
+      <xs:attribute name="task_id" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Tipo para la sección data -->
+  <xs:complexType name="dataType">
+    <xs:sequence>
+      <xs:element name="dataIn" type="xs:string" minOccurs="0"/>
+      <xs:element name="dataOut" type="dataOutType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Tipo para dataOut -->
+  <xs:simpleType name="dataOutType">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <!-- Tipo para log -->
+  <xs:complexType name="logType">
+    <xs:sequence>
+      <xs:element name="logLevel" type="xs:string" minOccurs="0"/>
+      <xs:element name="logFile" type="xs:string" minOccurs="0"/>
+      <xs:element name="logFormat" type="xs:string" minOccurs="0"/>
+      <xs:element name="logDateFormat" type="xs:string" minOccurs="0"/>
+      <xs:element name="logConsole" type="xs:boolean" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Tipo para options -->
+  <xs:complexType name="optionsType">
+    <xs:sequence>
+      <xs:element name="option" type="optionType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Tipo para option -->
+  <xs:complexType name="optionType">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="value" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo workbooks -->
+  <xs:complexType name="workbooksType">
+    <xs:sequence>
+      <xs:element name="styles" type="stylesType" minOccurs="0"/>
+      <xs:element name="workbook" type="workbookType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo styles -->
+  <xs:complexType name="stylesType">
+    <xs:sequence>
+      <xs:element name="style" type="styleType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo style -->
+  <xs:complexType name="styleType">
+    <xs:sequence>
+      <xs:element name="font" type="xs:string" minOccurs="0"/>
+      <xs:element name="size" type="xs:positiveInteger" minOccurs="0"/>
+      <xs:element name="bold" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="color" type="colorType" minOccurs="0"/>
+      <xs:element name="background" type="colorType" minOccurs="0"/>
+      <xs:element name="alignment" type="alignmentType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo workbook -->
+  <xs:complexType name="workbookType">
+    <xs:sequence>
+      <xs:element name="cell" type="cellType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo cell -->
+  <xs:complexType name="cellType">
+    <xs:attribute name="row" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="column" type="columnType" use="required"/>
+    <xs:attribute name="value" type="xs:string" use="required"/>
+    <xs:attribute name="format" type="xs:string" use="optional"/>
+    <xs:attribute name="style" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <!-- Tipo para colores hexadecimales -->
+  <xs:simpleType name="colorType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="#[0-9A-Fa-f]{6}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo para alineación -->
+  <xs:simpleType name="alignmentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="center"/>
+      <xs:enumeration value="right"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo para columnas (A-Z, AA-ZZ, etc.) -->
+  <xs:simpleType name="columnType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
