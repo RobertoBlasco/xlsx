@@ -1,0 +1,69 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Executable",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "PyInstaller",
+                "--onefile", 
+                "--version-file=version_info.rc",
+                "--add-data=schema.xsd:.",
+                "--icon=logo_ineosolutions.ico",
+                "ineoXlsxCmdLine.py"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Genera el ejecutable ineoXlsxCmdLine.exe con metadatos y XSD incluido"
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "rmdir /s /q build & rmdir /s /q dist & del *.spec"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Limpia archivos generados por PyInstaller (build, dist, .spec)"
+        },
+        {
+            "label": "Git Commit and Push",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "git add . && git commit -m \"Auto-commit from VS Code: $(date /t) $(time /t)\" && git push"
+            ],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Realiza add, commit automático con timestamp y push a git"
+        }
+    ]
+}

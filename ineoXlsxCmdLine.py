@@ -8,6 +8,7 @@ Lee el archivo XML indicado y genera salida.xlsx
 # TODO Añadir overwrite en dataOut al xsd
 
 import ineoXlsxGlobales
+from excel.excel_funciones_exportacion import xml_to_excel
 
 from datetime import datetime
 import xml.etree.ElementTree as ET
@@ -25,24 +26,48 @@ import logging
 
 
 
+def detect_xml_encoding(xml_file):
+    """Detecta el encoding de un archivo XML basándose en su declaración"""
+    try:
+        # Leer las primeras líneas en modo binario para evitar errores de encoding
+        with open(xml_file, 'rb') as f:
+            # Leer suficientes bytes para capturar la declaración XML
+            first_bytes = f.read(200)
+            first_line = first_bytes.decode('ascii', errors='ignore')
+
+            # Buscar la declaración de encoding
+            import re
+            encoding_match = re.search(r'encoding=["\']([^"\']+)["\']', first_line, re.IGNORECASE)
+            if encoding_match:
+                detected_encoding = encoding_match.group(1)
+                print(f"Encoding detectado en declaración XML: {detected_encoding}")
+                return detected_encoding
+            else:
+                print("No se encontró declaración de encoding, usando UTF-8 por defecto")
+                return 'utf-8'
+    except Exception as e:
+        print(f"Error detectando encoding: {e}, usando UTF-8 por defecto")
+        return 'utf-8'
+
 def validate_xml_against_xsd(xml_file, xsd_file="schema.xsd"):
     """Valida el archivo XML contra el esquema XSD"""
     try:
         # Obtener la ruta del directorio donde está el script
         script_dir = os.path.dirname(os.path.abspath(__file__))
         xsd_path = os.path.join(script_dir, xsd_file)
-        
+
         if not os.path.exists(xsd_path):
             print(f"Advertencia: No se encontró el archivo XSD en {xsd_path}")
             return True  # Continuar sin validación
-        
+
         # Cargar el esquema XSD
         with open(xsd_path, 'r', encoding='utf-8') as schema_file:
             schema_doc = etree.parse(schema_file)
             schema = etree.XMLSchema(schema_doc)
-        
-        # Cargar y validar el XML
-        with open(xml_file, 'r', encoding='utf-8') as xml_file_handle:
+
+        # Detectar encoding del archivo XML y cargarlo
+        xml_encoding = detect_xml_encoding(xml_file)
+        with open(xml_file, 'r', encoding=xml_encoding) as xml_file_handle:
             xml_doc = etree.parse(xml_file_handle)
             
         if schema.validate(xml_doc):
@@ -206,6 +231,94 @@ def extract_uri_content(uri_string):
     else:
         # Por defecto es archivo
         return 'file', uri_string
+
+def validate_and_get_data_source(uri_string, logger=None, is_data_in=True):
+    """Valida y obtiene el archivo de datos según el prefijo URI"""
+    try:
+        uri_type, content = extract_uri_content(uri_string)
+        
+        if uri_type == 'file':
+            # Para dataIn, validar que el archivo existe
+            if is_data_in and not os.path.exists(content):
+                if logger:
+                    logger.error(f"El archivo de entrada no existe: {content}")
+                else:
+                    print(f"Error: El archivo de entrada no existe: {content}")
+                return None
+            
+            # Para dataOut, crear directorio si no existe
+            if not is_data_in:
+                output_dir = os.path.dirname(content)
+                if output_dir and not os.path.exists(output_dir):
+                    os.makedirs(output_dir, exist_ok=True)
+                    if logger:
+                        logger.info(f"Directorio creado: {output_dir}")
+                    else:
+                        print(f"Directorio creado: {output_dir}")
+            
+            return content
+            
+        elif uri_type == 'base64':
+            if not is_data_in:
+                if logger:
+                    logger.error("BASE64:// no es válido para dataOut")
+                else:
+                    print("Error: BASE64:// no es válido para dataOut")
+                return None
+                
+            try:
+                # Decodificar BASE64 y crear archivo temporal
+                decoded_content = base64.b64decode(content).decode('utf-8')
+                temp_file = tempfile.NamedTemporaryFile(mode='w', suffix='.xml', delete=False, encoding='utf-8')
+                temp_file.write(decoded_content)
+                temp_file.close()
+                
+                if logger:
+                    logger.info(f"Contenido BASE64 decodificado a archivo temporal: {temp_file.name}")
+                
+                return temp_file.name
+                
+            except Exception as e:
+                if logger:
+                    logger.error(f"Error decodificando BASE64: {e}")
+                else:
+                    print(f"Error decodificando BASE64: {e}")
+                return None
+                
+        elif uri_type == 'url':
+            if is_data_in:
+                # Descargar desde URL para dataIn
+                try:
+                    response = urllib.request.urlopen(content)
+                    temp_file = tempfile.NamedTemporaryFile(mode='wb', suffix='.xml', delete=False)
+                    temp_file.write(response.read())
+                    temp_file.close()
+                    
+                    if logger:
+                        logger.info(f"Archivo descargado desde URL: {content} -> {temp_file.name}")
+                    
+                    return temp_file.name
+                    
+                except Exception as e:
+                    if logger:
+                        logger.error(f"Error descargando desde URL: {e}")
+                    else:
+                        print(f"Error descargando desde URL: {e}")
+                    return None
+            else:
+                # Para dataOut, URL:// no está implementado aún
+                if logger:
+                    logger.error("URL:// para dataOut no está implementado")
+                else:
+                    print("Error: URL:// para dataOut no está implementado")
+                return None
+                
+    except Exception as e:
+        if logger:
+            logger.error(f"Error validando origen de datos: {e}")
+        else:
+            print(f"Error validando origen de datos: {e}")
+        return None
 
 
 

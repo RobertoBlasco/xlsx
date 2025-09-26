@@ -76,9 +76,11 @@
       <xs:element name="font" type="xs:string" minOccurs="0"/>
       <xs:element name="size" type="xs:positiveInteger" minOccurs="0"/>
       <xs:element name="bold" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="italic" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="underline" type="xs:boolean" minOccurs="0"/>
+      <xs:element name="strikethrough" type="xs:boolean" minOccurs="0"/>
       <xs:element name="color" type="colorType" minOccurs="0"/>
       <xs:element name="background" type="colorType" minOccurs="0"/>
-      <xs:element name="alignment" type="alignmentType" minOccurs="0"/>
     </xs:sequence>
     <xs:attribute name="id" type="xs:string" use="required"/>
   </xs:complexType>
@@ -86,9 +88,47 @@
   <!-- Definición del tipo workbook -->
   <xs:complexType name="workbookType">
     <xs:sequence>
+      <xs:element name="columnSettings" type="columnSettingsType" minOccurs="0"/>
+      <xs:element name="rowSettings" type="rowSettingsType" minOccurs="0"/>
+      <xs:element name="table" type="tableType" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="cell" type="cellType" maxOccurs="unbounded"/>
     </xs:sequence>
     <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="autoAdjustColumnWidth" type="xs:boolean" use="optional"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo columnSettings -->
+  <xs:complexType name="columnSettingsType">
+    <xs:sequence>
+      <xs:element name="column" type="columnConfigType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo rowSettings -->
+  <xs:complexType name="rowSettingsType">
+    <xs:sequence>
+      <xs:element name="row" type="rowConfigType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Definición del tipo columnConfig -->
+  <xs:complexType name="columnConfigType">
+    <xs:attribute name="name" type="columnType" use="required"/>
+    <xs:attribute name="width" type="xs:positiveInteger" use="optional"/>
+    <xs:attribute name="format" type="xs:string" use="optional"/>
+    <xs:attribute name="style" type="xs:string" use="optional"/>
+    <xs:attribute name="horizontalAlignment" type="horizontalAlignmentType" use="optional"/>
+    <xs:attribute name="verticalAlignment" type="verticalAlignmentType" use="optional"/>
+  </xs:complexType>
+
+  <!-- Definición del tipo rowConfig -->
+  <xs:complexType name="rowConfigType">
+    <xs:attribute name="number" type="xs:positiveInteger" use="required"/>
+    <xs:attribute name="height" type="xs:positiveInteger" use="optional"/>
+    <xs:attribute name="format" type="xs:string" use="optional"/>
+    <xs:attribute name="style" type="xs:string" use="optional"/>
+    <xs:attribute name="horizontalAlignment" type="horizontalAlignmentType" use="optional"/>
+    <xs:attribute name="verticalAlignment" type="verticalAlignmentType" use="optional"/>
   </xs:complexType>
 
   <!-- Definición del tipo cell -->
@@ -98,6 +138,9 @@
     <xs:attribute name="value" type="xs:string" use="required"/>
     <xs:attribute name="format" type="xs:string" use="optional"/>
     <xs:attribute name="style" type="xs:string" use="optional"/>
+    <xs:attribute name="width" type="xs:positiveInteger" use="optional"/>
+    <xs:attribute name="horizontalAlignment" type="horizontalAlignmentType" use="optional"/>
+    <xs:attribute name="verticalAlignment" type="verticalAlignmentType" use="optional"/>
   </xs:complexType>
 
   <!-- Tipo para colores hexadecimales -->
@@ -107,12 +150,23 @@
     </xs:restriction>
   </xs:simpleType>
 
-  <!-- Tipo para alineación -->
-  <xs:simpleType name="alignmentType">
+  <!-- Tipo para alineación horizontal -->
+  <xs:simpleType name="horizontalAlignmentType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="left"/>
       <xs:enumeration value="center"/>
       <xs:enumeration value="right"/>
+      <xs:enumeration value="justify"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo para alineación vertical -->
+  <xs:simpleType name="verticalAlignmentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="top"/>
+      <xs:enumeration value="center"/>
+      <xs:enumeration value="bottom"/>
+      <xs:enumeration value="justify"/>
     </xs:restriction>
   </xs:simpleType>
 
@@ -122,5 +176,16 @@
       <xs:pattern value="[A-Z]+"/>
     </xs:restriction>
   </xs:simpleType>
+
+  <!-- Definición del tipo table -->
+  <xs:complexType name="tableType">
+    <xs:attribute name="name" type="xs:string" use="required"/>
+    <xs:attribute name="ref" type="xs:string" use="required"/>
+    <xs:attribute name="style" type="xs:string" use="optional"/>
+    <xs:attribute name="showFirstColumn" type="xs:boolean" use="optional"/>
+    <xs:attribute name="showLastColumn" type="xs:boolean" use="optional"/>
+    <xs:attribute name="showRowStripes" type="xs:boolean" use="optional"/>
+    <xs:attribute name="showColumnStripes" type="xs:boolean" use="optional"/>
+  </xs:complexType>
 
 </xs:schema>

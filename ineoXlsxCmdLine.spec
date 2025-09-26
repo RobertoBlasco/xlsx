@@ -5,7 +5,7 @@ a = Analysis(
     ['ineoXlsxCmdLine.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('schema.xsd', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,6 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['ineosolutions.ico'],
+    version='version_info.rc',
+    icon=['logo_ineosolutions.ico'],
 )

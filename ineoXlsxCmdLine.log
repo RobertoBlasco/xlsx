@@ -1,0 +1,238 @@
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Iniciando conversión XML a Excel
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Configuración de logging aplicada: {'logLevel': 'DEBUG', 'logFile': 'FILE://./ineoXlsxCmdLine.log', 'logFormat': '%(asctime)s - %(name)s - %(levelname)s - %(message)s', 'logDateFormat': '%Y-%m-%d %H:%M:%S', 'logConsole': 'true'}
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - No se especificó dataIn, usando archivo de configuración como datos
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Directorio creado: ./tmp
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Archivo Excel de salida: ./tmp/prueba_salida.xlsx
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Workbook 'Empleados': Hoja creada, procesando 85 celdas
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Configuraciones de columna aplicadas: ['A', 'B', 'C', 'E', 'F', 'G']
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - INFO - Configuraciones de fila aplicadas: [1, 2, 3, 5]
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda A1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda B1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda C1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '18' a columna D
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda D1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda E1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '25' a fila 1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda G1
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda A2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda B2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda C2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '18' a columna D
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=justify, vertical=top a celda D2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda E2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda F2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '18' a fila 2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=top a celda G2
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '22' a fila 3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G3
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G4
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando height '30' a fila 5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G5
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G6
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G7
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G8
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G9
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A10
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B10
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:42 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G10
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '20' a columna A
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=left, vertical=center a celda A11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0' a celda B11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '8' a columna B
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda B11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '15' a columna C
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=bottom a celda C11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '€#,##0.00' a celda E11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '12' a columna E
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda E11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato 'dd/mm/yyyy' a celda F11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '16' a columna F
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=center, vertical=center a celda F11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando formato '0.00%' a celda G11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando width '14' a columna G
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Aplicando alineamiento horizontal=right, vertical=center a celda G11
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - INFO - Tabla 'TablaEmpleados' creada en rango A1:G11 con estilo TableStyleMedium9
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - DEBUG - Ajuste automático columna D: width=21 (contenido max: 19)
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - INFO - Ajuste automático aplicado a hoja 'Empleados' (excluidas 6 columnas con width explícito)
+2025-08-29 19:00:43 - excel.excel_funciones_exportacion_2219159592592 - INFO - Archivo Excel creado exitosamente: ./tmp/prueba_salida.xlsx
