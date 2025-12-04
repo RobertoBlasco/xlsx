@@ -4,7 +4,11 @@
       "Bash(python:*)",
       "Bash(mkdir:*)",
       "Bash(del test_invalid.xml)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(python3:*)",
+      "Bash(pip install:*)",
+      "Bash(.venvScriptsactivate)",
+      "Bash(.venv/Scripts/activate)"
     ],
     "deny": []
   }
