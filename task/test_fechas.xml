@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ineoDoc task="updateXlsx" task_id="test_fechas_001">
+    <data>
+        <dataOut>FILE://./task/test_fechas_output.xlsx</dataOut>
+    </data>
+    <log>
+        <logLevel>DEBUG</logLevel>
+        <logFile>FILE://./task/test_fechas.log</logFile>
+        <logConsole>true</logConsole>
+    </log>
+
+    <workbooks>
+        <styles>
+            <style id="header">
+                <font>Arial</font>
+                <size>12</size>
+                <bold>true</bold>
+                <color>#FFFFFF</color>
+                <background>#4472C4</background>
+            </style>
+            <style id="data">
+                <font>Arial</font>
+                <size>10</size>
+                <color>#333333</color>
+            </style>
+        </styles>
+
+        <workbook name="TestFechas">
+            <!-- Configuración de columnas -->
+            <columnSettings>
+                <column name="A" width="20" horizontalAlignment="left" style="data" />
+                <column name="B" width="15" horizontalAlignment="center" format="dd/mm/yyyy" />
+                <column name="C" width="12" horizontalAlignment="right" format="0" />
+                <column name="D" width="12" horizontalAlignment="right" format="€#,##0.00" />
+            </columnSettings>
+
+            <!-- Configuración de filas -->
+            <rowSettings>
+                <row number="1" height="25" horizontalAlignment="center"
+                     verticalAlignment="center" style="header" />
+            </rowSettings>
+
+            <!-- Headers -->
+            <cell row="1" column="A" value="Descripción" />
+            <cell row="1" column="B" value="Fecha" />
+            <cell row="1" column="C" value="Cantidad" />
+            <cell row="1" column="D" value="Precio" />
+
+            <!-- Datos con fechas en diferentes formatos de entrada -->
+            <cell row="2" column="A" value="Prueba formato ISO" />
+            <cell row="2" column="B" value="2023-01-15" />
+            <cell row="2" column="C" value="10" />
+            <cell row="2" column="D" value="45.50" />
+
+            <cell row="3" column="A" value="Prueba formato DD/MM/YYYY" />
+            <cell row="3" column="B" value="20/03/2023" />
+            <cell row="3" column="C" value="25" />
+            <cell row="3" column="D" value="125.75" />
+
+            <cell row="4" column="A" value="Prueba formato DD-MM-YYYY" />
+            <cell row="4" column="B" value="05-07-2023" />
+            <cell row="4" column="C" value="8" />
+            <cell row="4" column="D" value="89.99" />
+
+            <cell row="5" column="A" value="Prueba formato YYYYMMDD" />
+            <cell row="5" column="B" value="20231231" />
+            <cell row="5" column="C" value="100" />
+            <cell row="5" column="D" value="1500" />
+        </workbook>
+    </workbooks>
+</ineoDoc>

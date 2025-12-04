@@ -1,14 +1,22 @@
-# Conversor XML a Excel - Plugin IneoXlsx v2.2.1
+# Conversor XML a Excel - Plugin IneoXlsx v2.2.2
 
 Plugin avanzado para convertir archivos XML estructurados a archivos Excel (.xlsx) con soporte completo para estilos, formato de tablas, configuración de columnas/filas y múltiples funcionalidades profesionales.
 
-**Versión 2.2.0** (Revisión: 20250829) incluye características avanzadas como ajuste automático configurable, 60 estilos de tablas predefinidos, gestión inteligente de archivos existentes y sistema de precedencia completo.
+**Versión 2.2.2** (Revisión: 20251204) incluye conversión automática de tipos de datos nativos (fechas y números reconocidos correctamente por Excel), además de características avanzadas como ajuste automático configurable, 60 estilos de tablas predefinidos, gestión inteligente de archivos existentes y sistema de precedencia completo.
 
 **Desarrollado por**: Ineo Solutions S.L. | info@ineosolutions.es | 2025
 
 ## Funcionalidades Principales
 
-### Nuevas Características v2.2.0
+### Nuevas Características v2.2.2
+- **🎯 Conversión automática de tipos de datos**: Las fechas y números son reconocidos como tipos nativos en Excel (no como texto)
+  - Fechas en formato `dd/mm/yyyy` se convierten a tipo FECHA en Excel
+  - Números con formato `0`, `0.00`, `€#,##0.00`, etc. se convierten a tipo NÚMERO en Excel
+  - Soporte para múltiples formatos de entrada (ISO, europeo, compacto para fechas)
+  - Logging detallado de conversiones con nivel DEBUG
+  - Ver `FIX_FECHAS_v2.2.2.md` para detalles completos
+
+### Características v2.2.0
 - **Formato de tablas**: Creación de tablas Excel con filtros automáticos y estilos profesionales (60 estilos predefinidos)
 - **Configuración de columnas y filas**: Aplicación de propiedades a columnas y filas completas
 - **Sistema de precedencia**: Cell > Row > Column > Default para todas las propiedades
@@ -687,6 +695,20 @@ INFO - Archivo Excel creado exitosamente: ./output/empleados.xlsx
 
 ## Changelog
 
+### v2.2.2 (Revisión: 20251204)
+**Fix Crítico: Reconocimiento de Tipos de Datos Nativos**
+- **🎯 Conversión automática de valores a tipos nativos**: Solución al problema donde fechas y números se guardaban como texto
+  - Las fechas con formato `dd/mm/yyyy` ahora se reconocen como tipo FECHA en Excel
+  - Los números con formato `0`, `€#,##0.00`, etc. ahora se reconocen como tipo NÚMERO en Excel
+  - Nueva función `convert_value_by_format()` que analiza el formato y convierte automáticamente
+  - Soporte para múltiples formatos de entrada:
+    - Fechas: ISO (`2023-01-15`), europeo (`15/01/2023`), compacto (`20230115`), etc.
+    - Números: enteros, decimales, con separadores de miles
+  - Logging DEBUG muestra detalles de cada conversión realizada
+  - Sistema de fallback: si la conversión falla, se guarda como texto sin interrumpir el proceso
+- **Retrocompatibilidad completa**: XMLs existentes siguen funcionando sin cambios
+- Ver `FIX_FECHAS_v2.2.2.md` para documentación completa del fix
+
 ### v2.2.1 (Revisión: 20250926)
 **Parche de Compatibilidad:**
 - **Detección automática de encoding**: Soporte inteligente para múltiples codificaciones XML
@@ -731,4 +753,4 @@ Email: info@ineosolutions.es
 Año: 2025
 
 ---
-**IneoXlsx v2.2.0** - Conversor XML a Excel Profesional
+**IneoXlsx v2.2.2** - Conversor XML a Excel Profesional

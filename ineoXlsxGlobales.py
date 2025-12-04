@@ -7,6 +7,6 @@ PROGRAM_NAME = "ineoXlsxCmdLine"
 # Nombre de la compañía
 COMPANY_NAME = "Ineo Solutions S.L. | info@ineosolutions.es | 2025"
 # Versión del programa ineoXlsxCmdline
-INEOXLSXCMDLINE_VERSION = "2.2.1"
+INEOXLSXCMDLINE_VERSION = "2.2.2"
 # Revisión del programa ineoXlsxCmdline
-INEOXLSXCMDLINE_REVISION = "20250926"
+INEOXLSXCMDLINE_REVISION = "20251204"

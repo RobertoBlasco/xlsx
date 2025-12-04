@@ -6,6 +6,7 @@ import logging
 import tempfile
 import base64
 import urllib.request
+import re
 from datetime import datetime
 from lxml import etree
 from openpyxl import Workbook, load_workbook
@@ -408,13 +409,13 @@ def parse_options(root_elem):
         'maxColumnWidth': 50,
         'minColumnWidth': 8
     }
-    
+
     options_elem = root_elem.find('options')
     if options_elem is not None:
         for option_elem in options_elem.findall('option'):
             name = option_elem.get('name')
             value = option_elem.get('value')
-            
+
             if name == 'autoAdjustColumnWidth':
                 options['autoAdjustColumnWidth'] = value.lower() == 'true'
             elif name == 'maxColumnWidth':
@@ -427,8 +428,102 @@ def parse_options(root_elem):
                     options['minColumnWidth'] = int(value)
                 except ValueError:
                     pass  # Mantener valor por defecto si no es válido
-    
+
     return options
+
+def convert_value_by_format(value_str, number_format, logger=None):
+    """
+    Convierte el valor string al tipo apropiado según el formato especificado.
+
+    Parámetros:
+        value_str: Valor como string del XML
+        number_format: Formato de número/fecha (ej: 'dd/mm/yyyy', '0', '€#,##0.00')
+        logger: Logger opcional para debug
+
+    Retorna:
+        El valor convertido al tipo apropiado (datetime, int, float, o str)
+    """
+    if not value_str or value_str.strip() == '':
+        return value_str
+
+    value_str = value_str.strip()
+
+    # Detectar si es un formato de fecha
+    date_format_patterns = [
+        r'd+[/-]m+[/-]y+',  # dd/mm/yyyy, dd-mm-yyyy, d/m/yy, etc.
+        r'm+[/-]d+[/-]y+',  # mm/dd/yyyy, mm-dd-yyyy, m/d/yy, etc.
+        r'y+[/-]m+[/-]d+',  # yyyy/mm/dd, yyyy-mm-dd, yy/m/d, etc.
+        r'd+\.m+\.y+',      # dd.mm.yyyy, d.m.yy, etc.
+    ]
+
+    is_date_format = any(re.search(pattern, number_format.lower()) for pattern in date_format_patterns)
+
+    if is_date_format:
+        # Intentar parsear como fecha
+        # Formatos de fecha comunes que puede recibir como valor
+        date_input_formats = [
+            '%Y-%m-%d',           # 2023-01-15
+            '%d/%m/%Y',           # 15/01/2023
+            '%d-%m-%Y',           # 15-01-2023
+            '%d.%m.%Y',           # 15.01.2023
+            '%m/%d/%Y',           # 01/15/2023
+            '%Y/%m/%d',           # 2023/01/15
+            '%Y%m%d',             # 20230115
+            '%d/%m/%y',           # 15/01/23
+            '%d-%m-%y',           # 15-01-23
+        ]
+
+        for date_format in date_input_formats:
+            try:
+                parsed_date = datetime.strptime(value_str, date_format)
+                if logger:
+                    logger.debug(f"Valor '{value_str}' convertido a fecha usando formato '{date_format}'")
+                return parsed_date
+            except ValueError:
+                continue
+
+        # Si no se pudo parsear como fecha, advertir y retornar como string
+        if logger:
+            logger.warning(f"No se pudo convertir '{value_str}' a fecha. Formatos intentados: {date_input_formats}. Se guardará como texto.")
+        return value_str
+
+    # Detectar si es un formato numérico (pero no fecha)
+    # Patrones de formato numérico: 0, 0.00, #,##0, #,##0.00, €#,##0.00, 0.00%, etc.
+    numeric_format_patterns = [
+        r'^[#0]',              # Empieza con # o 0
+        r'[€$£¥]',             # Símbolos de moneda
+        r'%',                  # Porcentaje
+        r'#,##0',              # Separador de miles
+    ]
+
+    is_numeric_format = any(re.search(pattern, number_format) for pattern in numeric_format_patterns)
+
+    if is_numeric_format:
+        # Intentar convertir a número
+        try:
+            # Limpiar el valor de posibles separadores de miles y espacios
+            clean_value = value_str.replace(',', '').replace(' ', '').replace('\xa0', '')
+
+            # Intentar como float
+            if '.' in clean_value or 'e' in clean_value.lower():
+                numeric_value = float(clean_value)
+                if logger:
+                    logger.debug(f"Valor '{value_str}' convertido a float: {numeric_value}")
+                return numeric_value
+            else:
+                # Intentar como int
+                numeric_value = int(clean_value)
+                if logger:
+                    logger.debug(f"Valor '{value_str}' convertido a int: {numeric_value}")
+                return numeric_value
+        except ValueError:
+            # Si no se puede convertir, advertir y retornar como string
+            if logger:
+                logger.warning(f"No se pudo convertir '{value_str}' a número según formato '{number_format}'. Se guardará como texto.")
+            return value_str
+
+    # Si no es fecha ni número, retornar como string
+    return value_str
 
 def xml_to_excel(config_file, output_file=None):
     """Convierte el XML a Excel usando configuración del archivo"""
@@ -582,13 +677,16 @@ def xml_to_excel(config_file, output_file=None):
                 row = int(cell_elem.get('row'))
                 column = cell_elem.get('column')
                 value = cell_elem.get('value', '')
-                
+
                 # Obtener propiedades finales aplicando precedencia
                 properties = get_cell_properties(row, column, cell_elem, column_settings, row_settings)
-                
-                ws[f"{column}{row}"] = value
+
+                # Convertir el valor según el formato antes de asignarlo
+                converted_value = convert_value_by_format(value, properties['format'], logger)
+
+                ws[f"{column}{row}"] = converted_value
                 cell = ws[f"{column}{row}"]
-                
+
                 # Aplicar formato de número si está especificado
                 if properties['format'] and properties['format'] != 'General':
                     cell.number_format = properties['format']
